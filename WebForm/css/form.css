@@ -1,0 +1,277 @@
+/* Global Forms
+-------------------------------------------*/
+form    {  /* removed border from form */
+        border: none; /*1px solid #dedede; */
+        padding: 0px 10px 10px;
+        margin: 0px 10px 10px;
+        background: #fff;
+/*        -moz-border-radius: 8px;
+        -webkit-border-radius: 8px;
+        border-radius:8px; */
+}
+
+form fieldset,
+form fieldset fieldset {
+        float:left;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #4b4b4b; /* this is the border that doesn't have rounded corners in ie8 */
+        background: #fff;
+        -moz-border-radius: 8px;
+        -webkit-border-radius: 8px;
+        border-radius: 8px;
+}
+
+/* The following two fieldset styles make fieldsets that sit next to each other */
+form fieldset fieldset.leftSide {
+        float:left;
+        paddding:10px;
+        margin-bottom:10px;
+        border: 1px solid #4b4b4b;
+        background:#fff;
+        -moz-border-radius: 8px;
+        -webkit-border-radius: 8px;
+        border-radius: 8px;
+        width:450px;
+}
+
+form fieldset fieldset.rightSide {
+        float:right;
+        paddding:10px;
+        margin-bottom:10px;
+        border: 1px solid #4b4b4b;
+        background:#fff;
+        -moz-border-radius: 8px;
+        -webkit-border-radius: 8px;
+        border-radius: 8px;
+        width:450px;
+}
+
+form legend,
+form fieldset legend {
+        padding: 8px;
+        font-size: 16px;
+        font-weight: bold;
+        background-color: #fff;
+        border: 1px solid #4b4b4b;
+        color: #4b4b4b;
+        -moz-border-radius: 8px;
+        -webkit-border-radius: 8px;
+        border-radius:8px;
+}
+
+form label,
+form fieldset label {
+        display:block;
+        float:left;
+        color: #333;
+        font-size:14px;
+        margin: 10px 10px 2px 0;
+        text-align:left;
+        
+}
+
+form textarea,
+form input,
+form select,
+form fieldset textarea, 
+form fieldset input, 
+form fieldset select {
+        padding: 2px;
+        margin-bottom: 15px;
+        border: 1px solid #666;
+        display:block;
+        width:15em;
+}
+
+form textarea,
+form fieldset textarea {
+        border: 1px solid #666;
+        padding:5px;
+        -moz-border-radius: 8px;
+        -webkit-border-radius: 8px;
+        border-radius: 8px;
+}
+
+form select,
+form fieldset select {
+        padding:2px;
+        font-size:18px;
+        background-color: #fff;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        border:1px solid #666;
+        width:100px;
+        color: #000;
+}
+
+form input[type="text"],
+form input[type="password"],
+form fieldset input[type="text"],
+form fieldset input[type="password"] {
+        border: 1px solid #666;
+        font-size:18px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius:5px;
+        width: 200px;
+}
+
+form fieldset label input[type="checkbox"],
+form fieldset input[type="checkbox"],
+form input[type="checkbox"] {
+        text-align:left;
+        color: #000;
+        border:none;
+        /*float:left;*/ /* disturbs text next to toggleForm checkboxes */
+        width:30px;
+}
+
+form input[type="radio"],
+form fieldset input[type="radio"],
+form fieldset label input[type="radio"] {
+        padding: 0;
+        margin: 0;
+        color: #000;
+        border:none;
+        background-color: #fff;
+        float:left;
+        width:30px;
+}
+
+form option,
+form fieldset option {
+        background-color: #fff;
+        color: #000;
+}
+
+form optgroup,
+form fieldset optgroup {
+        background-color: #ccc;
+        color: #000;
+}
+
+form input[type="submit"] {
+        margin: 0;
+        background-color: #e2e2e2;
+        font-size: 16px;
+        font-weight: bold;
+        color: #4b4b4b;
+        cursor: pointer;
+        width: 200px;
+        padding: 10px;
+        border: 1px solid #4b4b4b;
+        -moz-border-radius: 8px;
+        -webkit-border-radius: 8px;
+        border-radius:8px;
+}
+
+/* toggleForm is for a div that shows/hides parts of a form depending on a checkbox */
+.toggleForm {
+        display:none;
+}
+
+.clear  {
+        clear:both;
+}
+
+/* This is to get information to come alongside checkbox to control toggleForm show/hide */
+form fieldset label input[type="checkbox"].showFieldset {
+        padding: 2px;
+        margin-bottom: 15px;
+        border: none;
+        display:inline;
+}
+
+form fieldset label.showFieldset {
+        width:250px;
+        position:absolute;
+        border:none;
+        color: #333;
+        font-size:14px;
+        margin: 0px 10px 2px 0;
+        text-align:left;
+        float:none;
+        display:inline;
+}
+
+.underline {
+        text-decoration:underline;
+}
+
+.bold       {
+        font-weight:bold;
+}
+
+.italic     {
+        font-style:italic;
+}
+
+.information {
+        text-align: left;
+        font-size:12px;
+        float:right;
+        width: 75%;
+        position:relative;
+}
+
+/* this is for a div next to the label to show validation information */
+.validation {
+        display:inline;
+        color:red;
+        font-size:small;
+        padding-left:5px;
+}
+
+/* Form Buttons
+-------------------------------------------*/
+.buttons a, .buttons button{
+    display:block;
+    /*float:left; add this to the internal stylesheet if you have several buttons*/
+    margin:0 7px 0 0;
+    background-color:#ededed;
+    border:1px solid #06395f;
+    font-family:"Lucida Grande", Tahoma, Arial, Verdana, sans-serif;
+    font-size:18px;
+    line-height:130%;
+    text-decoration:none;
+    color:#06395f;
+    cursor:pointer;
+    padding:7px 20px 7px 17px;
+    /* Links */
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius:8px;
+}
+
+.buttons a:hover, .buttons button:hover {
+        background:#d7d7d7;
+}
+
+.buttons button {
+        width:auto;
+        overflow:visible;
+        padding:4px 10px 3px 7px;
+        /* IE6 */
+}
+
+.buttons button[type]{
+        padding:9px 20px 9px 17px;
+        /* Firefox */
+        line-height:17px;
+        /* Safari */
+}
+
+*:first-child+html button[type] {
+        padding:4px 10px 3px 7px;
+        /* IE7 */
+}
+
+.buttons button img, .buttons a img {
+        margin:0 3px -3px 0 !important;
+        padding:0;
+        border:none;
+        width:16px;
+        height:16px;
+}

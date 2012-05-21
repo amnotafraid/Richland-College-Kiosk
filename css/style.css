@@ -1,0 +1,720 @@
+/* Undo default HTML styling of common browsers */
+
+ul, ol {list-style:none}
+
+img {border:none}
+
+/* General */
+
+html, body {
+        height:100%;
+        }
+
+body {
+        margin:0px;
+        padding:0px;
+        overflow:hidden;
+	}
+        
+@media all { /* show the background image */
+    #bg-image {
+            position:fixed;
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+            position:absolute;
+            z-index:-1;
+            }
+}
+
+@media print { /* do not show background image when printing */
+    #bg-image {
+            display:none;
+            }
+}
+
+#bg {
+        position:relative;
+        z-index:1;
+        }
+
+/* Header */
+
+div#header {
+	position:absolute;
+        width:1200px;
+        height:80px;
+        left:0px;
+        top:20px;
+        font-family:"Sylfaen",Georgia,Serif; 
+	font-style:normal; 
+	color:black;
+        margin-left:104px;
+        padding-bottom:10px;
+	}
+        
+#header a:link, a:visited, a:active {
+	text-decoration:none;
+        outline:none;
+        }
+
+/* Page */
+div#content {
+	position:relative;
+        left:104px;
+        top:80px;
+        text-align:center;
+	font-family:'lucida grande',tahoma,verdana,arial,sans-serif;
+	font-style:normal;
+	color:#000000;
+        clear:left;
+        /* border:solid 1px blue; testing */
+        /*overflow:auto;  add this in for the form */
+        }
+
+/* iframe */
+div#frame { 
+	position:relative;
+        left:0px;
+        top:0px;
+}
+
+#content a:link, a:visited, a:active {
+	text-decoration:none;
+        }
+
+h1 {
+	font-family:'lucida grande',tahoma,verdana,arial,sans-serif;
+	font-size: 18pt;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+/* Main Button */
+/* This is for creating the button image */
+div.mainbuttonbox {
+       position:absolute;
+       top:344px;
+       left:368px;
+       width:300px;
+       height:68px;
+}
+
+.mainbutton {
+        border-top: 1px solid #ffffff;
+        background: #127f45;
+        background-repeat: repeat-x;
+        background-position: 0 0;
+        zoom: 1;
+        border-radius: 15px;
+        -moz-border-radius: 15px;
+        -webkit-border-radius: 15px;
+
+        -webkit-box-shadow: 0px 2px 4px #999;
+        -moz-box-shadow: 0px 2px 4px #999;
+        box-shadow: 0px 2px 4px #999;
+
+        font-size:22px;
+        vertical-align: middle;
+        margin: 0 0 16px;
+        display: block;
+        padding: 20px 40px;
+       }
+.mainbutton:hover {
+       border-top-color: 1cc46a;
+       background: #0e5931;
+       background-repeat: repeat-x;
+       background-position: 0 10%;
+       zoom: 1;
+       border-radius: 15px;
+       -moz-border-radius: 15px;
+       -webkit-border-radius: 15px;
+
+       -webkit-box-shadow: 0px 2px 4px #999;
+       -moz-box-shadow: 0px 2px 4px #999;
+       box-shadow: 0px 2px 4px #999;
+
+       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1cc46a', endColorstr='#148c4c'); /* for IE */
+       background: -webkit-gradient(linear, left top, left bottom, from(#1cc46a), to(#148c4c));
+       background: -webkit-linear-gradient(top, #1cc46a, #148c4c);
+       background: -moz-linear-gradient(top, #1cc46a, #148c4c);
+       background: -ms-linear-gradient(top, #1cc46a, #148c4c);
+       background: -o-linear-gradient(top, #1cc46a, #148c4c);
+       color:white;
+       }
+.mainbutton:active {
+       border-top-color: 1aba65;
+       background: 169e56;
+       background-repeat: repeat-x;
+       background-position: 0 20%;
+       zoom: 1;
+       border-radius: 15px;
+       -moz-border-radius: 15px;
+       -webkit-border-radius: 15px;
+
+       -webkit-box-shadow: 0px 2px 4px #999;
+       -moz-box-shadow: 0px 2px 4px #999;
+       box-shadow: 0px 2px 4px #999;
+
+       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#148c4c', endColorstr='#1cc46a'); /* for IE */
+       background: -webkit-gradient(linear, left top, left bottom, from(#148c4c), to(#1cc46a));
+       background: -webkit-linear-gradient(top, #148c4c, #1cc46a);
+       background: -moz-linear-gradient(top, #148c4c, #1cc46a);
+       background: -ms-linear-gradient(top, #148c4c, #1cc46a);
+       background: -o-linear-gradient(top, #148c4c, #1cc46a);
+       } 
+.mainbuttonbox a {
+       color:white;
+       text-decoration:none; 
+       }
+.mainbuttonbox a:active, .mainbuttonbox a:focus {
+       outline:none;
+       }
+
+/* Content Buttons */
+/* This is for creating the button image */
+div.greenbuttonbox {
+       position:absolute;
+       width:300px;
+       height:68px;
+}
+
+div.adminbuttonbox {
+       position:absolute;
+       width:300px;
+       height:100px;
+}
+
+.greenbutton {
+        border-top: 1px solid #ffffff;
+        background: #127f45;
+        background-repeat: repeat-x;
+        background-position: 0 0;
+        zoom: 1;
+        border-radius: 15px;
+        -moz-border-radius: 15px;
+        -webkit-border-radius: 15px;
+
+        -webkit-box-shadow: 0px 2px 4px #999;
+        -moz-box-shadow: 0px 2px 4px #999;
+        box-shadow: 0px 2px 4px #999;
+
+        font-size:22px;
+        vertical-align: middle;
+        margin: 0 0 16px;
+        display: block;
+        padding: 20px 40px;
+        color:white;
+       }
+.greenbutton:hover {
+       border-top-color: 1cc46a;
+       background: #0e5931;
+       background-repeat: repeat-x;
+       background-position: 0 10%;
+       zoom: 1;
+       border-radius: 15px;
+       -moz-border-radius: 15px;
+       -webkit-border-radius: 15px;
+
+       -webkit-box-shadow: 0px 2px 4px #999;
+       -moz-box-shadow: 0px 2px 4px #999;
+       box-shadow: 0px 2px 4px #999;
+
+       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1cc46a', endColorstr='#148c4c'); /* for IE */
+       background: -webkit-gradient(linear, left top, left bottom, from(#1cc46a), to(#148c4c));
+       background: -webkit-linear-gradient(top, #1cc46a, #148c4c);
+       background: -moz-linear-gradient(top, #1cc46a, #148c4c);
+       background: -ms-linear-gradient(top, #1cc46a, #148c4c);
+       background: -o-linear-gradient(top, #1cc46a, #148c4c);
+       color:white;
+       }
+.greenbutton:active {
+       border-top-color: 1aba65;
+       background: 169e56;
+       background-repeat: repeat-x;
+       background-position: 0 20%;
+       zoom: 1;
+       border-radius: 15px;
+       -moz-border-radius: 15px;
+       -webkit-border-radius: 15px;
+
+       -webkit-box-shadow: 0px 2px 4px #999;
+       -moz-box-shadow: 0px 2px 4px #999;
+       box-shadow: 0px 2px 4px #999;
+
+       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#148c4c', endColorstr='#1cc46a'); /* for IE */
+       background: -webkit-gradient(linear, left top, left bottom, from(#148c4c), to(#1cc46a));
+       background: -webkit-linear-gradient(top, #148c4c, #1cc46a);
+       background: -moz-linear-gradient(top, #148c4c, #1cc46a);
+       background: -ms-linear-gradient(top, #148c4c, #1cc46a);
+       background: -o-linear-gradient(top, #148c4c, #1cc46a);
+       } 
+.greenbuttonbox a {
+       color:white;
+       text-decoration:none; 
+       }
+.greenbuttonbox a:active, .greenbuttonbox a:focus, .adminbuttonbox a:active, .adminbuttonbox a:focus {
+       outline:none;
+       }
+
+ div.btninfo {
+        width: 400px;
+        height: 68px;
+        line-height:18px;
+        /*background-color:#22dd22;*/
+        border: 1px solid #666666;
+        border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-khtml-border-radius: 10px;	
+	-moz-border-radius: 10px; 
+        position:absolute;
+        visibility:hidden;
+}
+
+ div.btninfoanimate { /* this is the background for animated button hover */
+        width: 400px;
+        height: 300px;
+        line-height:18px;
+        background:#333;
+	padding: 20px;
+        margin:0px 15px;
+        color:white;
+        font-size: 1.2em;
+        border: 1px solid #666666;
+        border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-khtml-border-radius: 10px;	
+	-moz-border-radius: 10px; 
+        position:absolute;
+        top:200px;
+        left:200px;
+        visibility:hidden;
+}
+
+.animateMe {
+        display:none; /*-- hidden by default */
+        opacity:0.1;
+}
+
+.underline {
+        text-decoration:underline;
+}
+
+/* the red info button */
+div.infobuttonbox {
+        position:absolute;
+        width:178px;
+        height:68px;
+        display:none;
+}
+
+.infobutton {
+        border-top: 1px solid #ffffff;
+        background: #541753;
+        background-repeat: repeat-x;
+        background-position: 0 60%;
+        zoom: 1;
+        border-radius: 34px;
+        -moz-border-radius: 34px;
+        -webkit-border-radius: 34px;
+
+        -webkit-box-shadow: 0px 2px 4px #999;
+        -moz-box-shadow: 0px 2px 4px #999;
+        box-shadow: 0px 2px 4px #999;
+
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f00e0e', endColorstr='#ad1010'); /* for IE */
+        background: -webkit-gradient(linear, left top, left bottom, from(#f00e0e), to(#ad1010));
+        background: -webkit-linear-gradient(top, #f00e0e, #ad1010);
+        background: -moz-linear-gradient(top, #f00e0e, #ad1010);
+        background: -ms-linear-gradient(top, #f00e0e, #ad1010);
+        background: -o-linear-gradient(top, #f00e0e, #ad1010);
+
+        font-family:"Sylfaen",Georgia,Serif; 
+	font-style:normal; 
+        font-size:22px;
+        vertical-align: middle;
+        margin: 0 0 16px;
+        display: block;
+        padding: 20px 40px;
+}
+
+.infobutton:hover {
+       border-top-color: 1cc46a;
+       background: #ba2cb5;
+       background-repeat: repeat-x;
+       background-position: 0 70%;
+       zoom: 1;
+       border-radius: 34px;
+       -moz-border-radius: 34px;
+       -webkit-border-radius: 34px;
+
+       -webkit-box-shadow: 0px 2px 4px #999;
+       -moz-box-shadow: 0px 2px 4px #999;
+       box-shadow: 0px 2px 4px #999;
+
+       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f23030', endColorstr='#b02323'); /* for IE */
+       background: -webkit-gradient(linear, left top, left bottom, from(#f23030), to(#b02323));
+       background: -webkit-linear-gradient(top, #f23030, #b02323);
+       background: -moz-linear-gradient(top, #f23030, #b02323);
+       background: -ms-linear-gradient(top, #f23030, #b02323);
+       background: -o-linear-gradient(top, #f23030, #b02323);
+       color:white;
+       }
+       
+.infobutton:active {
+       border-top-color: 1aba65;
+       background: #ba2cb5;
+       background-repeat: repeat-x;
+       background-position: 0 80%;
+       zoom: 1;
+       border-radius: 34px;
+       -moz-border-radius: 34px;
+       -webkit-border-radius: 34px;
+
+       -webkit-box-shadow: 0px 2px 4px #999;
+       -moz-box-shadow: 0px 2px 4px #999;
+       box-shadow: 0px 2px 4px #999;
+
+       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ad1010', endColorstr='#f00e0e'); /* for IE */
+       background: -webkit-gradient(linear, left top, left bottom, from(#ad1010), to(#f00e0e));
+       background: -webkit-linear-gradient(top, #ad1010, #f00e0e);
+       background: -moz-linear-gradient(top, #ad1010, #f00e0e);
+       background: -ms-linear-gradient(top, #ad1010, #f00e0e);
+       background: -o-linear-gradient(top, #ad1010, #f00e0e);
+       }
+       
+.infobuttonbox a {
+       color:white;
+       text-decoration:none;
+       text-align:left;
+       }
+       
+.infobutton a:active, .infobutton a:focus {
+       outline:none;
+       }
+
+/* This is for creating the button image */
+div.purplebuttonbox {
+        position:absolute;
+        width:192px;
+        height:68px;
+        display:none;
+}
+
+.purplebutton {
+       border-top: 1px solid #ffffff;
+       background: #541753;
+       background-repeat: repeat-x;
+       background-position: 0 30%;
+       zoom: 1;
+
+       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#541753', endColorstr='#92278e'); /* for IE */
+       background: -webkit-gradient(linear, left top, left bottom, from(#541753), to(#92278e));
+       background: -webkit-linear-gradient(top, #541753, #92278e);
+       background: -moz-linear-gradient(top, #541753, #92278e);
+       background: -ms-linear-gradient(top, #541753, #92278e);
+       background: -o-linear-gradient(top, #541753, #92278e);
+
+       border-radius: 15px;
+       -webkit-border-radius: 15px;
+       -moz-border-radius: 15px;
+
+       -webkit-box-shadow: 0px 2px 4px #999;
+       -moz-box-shadow: 0px 2px 4px #999;
+       box-shadow: 0px 2px 4px #999;
+       
+       padding: 20px 40px;
+
+       text-shadow: rgba(0,0,0,.4) 0 1px 0;
+       font-size:22px;
+       vertical-align: middle;
+       display:block;
+       }
+       
+.purplebutton:hover {
+       border-top-color: 1cc46a;
+       background: #0e5931;
+       background-repeat: repeat-x;
+       background-position: 0 40%;
+       zoom: 1;
+
+       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ba2cb5', endColorstr='#148c4c'); /* for IE */
+       background: -webkit-gradient(linear, left top, left bottom, from(#ba2cb5), to(#801f7d));
+       background: -webkit-linear-gradient(top, #ba2cb5, #801f7d);
+       background: -moz-linear-gradient(top, #ba2cb5, #801f7d);
+       background: -ms-linear-gradient(top, #ba2cb5, #801f7d);
+       background: -o-linear-gradient(top, #ba2cb5, #801f7d);
+
+       border-radius: 15px;
+       -moz-border-radius: 15px;
+       -webkit-border-radius: 15px;
+
+       -webkit-box-shadow: 0px 2px 4px #999;
+       -moz-box-shadow: 0px 2px 4px #999;
+       box-shadow: 0px 2px 4px #999;
+       
+       color:white;
+       }
+       
+.purplebutton:active {
+       border-top-color: 1aba65;
+       background: #ffffff;
+       background: 169e56;
+       background-repeat: repeat-x;
+       background-position: 0 50%;
+       zoom: 1;
+       
+       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#801f7d', endColorstr='#ba2cb5'); /* for IE */
+       background: -webkit-gradient(linear, left top, left bottom, from(#801f7d), to(#ba2cb5));
+       background: -webkit-linear-gradient(top, #801f7d, #ba2cb5);
+       background: -moz-linear-gradient(top, #801f7d, #ba2cb5);
+       background: -ms-linear-gradient(top, #801f7d, #ba2cb5);
+       background: -o-linear-gradient(top, #801f7d, #ba2cb5);
+       
+       border-radius: 15px;
+       -moz-border-radius: 15px;
+       -webkit-border-radius: 15px;
+
+       -webkit-box-shadow: 0px 2px 4px #999;
+       -moz-box-shadow: 0px 2px 4px #999;
+       box-shadow: 0px 2px 4px #999;
+       }
+
+.purplebuttonbox a {
+       color:white;
+       text-decoration:none; 
+       }
+       
+.purplebuttonbox a:active, .purplebuttonbox a:focus {
+       outline:none;
+       }
+       
+/* This is for creating the print help button */
+div.infobuttonbox {
+        position:absolute;
+        width:178px;
+        height:68px;
+        display:none;
+}
+
+.infobutton
+{
+        border-top: 1px solid #ffffff;
+        background: #541753;
+        background-repeat: repeat-x;
+        background-position: 0 60%;
+        zoom: 1;
+        border-radius: 34px;
+        -moz-border-radius: 34px;
+        -webkit-border-radius: 34px;
+
+        -webkit-box-shadow: 0px 2px 4px #999;
+        -moz-box-shadow: 0px 2px 4px #999;
+        box-shadow: 0px 2px 4px #999;
+
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f00e0e', endColorstr='#ad1010'); /* for IE */
+        background: -webkit-gradient(linear, left top, left bottom, from(#f00e0e), to(#ad1010));
+        background: -webkit-linear-gradient(top, #f00e0e, #ad1010);
+        background: -moz-linear-gradient(top, #f00e0e, #ad1010);
+        background: -ms-linear-gradient(top, #f00e0e, #ad1010);
+        background: -o-linear-gradient(top, #f00e0e, #ad1010);
+
+        font-size:22px;
+        vertical-align: middle;
+        margin: 0 0 16px;
+        display: block;
+        padding: 20px 40px;
+}
+.infobutton:hover {
+       border-top: 1px solid #ffffff;
+       background: #ba2cb5;
+       background-repeat: repeat-x;
+       background-position: 0 70%;
+       zoom: 1;
+       border-radius: 34px;
+       -moz-border-radius: 34px;
+       -webkit-border-radius: 34px;
+
+       -webkit-box-shadow: 0px 2px 4px #999;
+       -moz-box-shadow: 0px 2px 4px #999;
+       box-shadow: 0px 2px 4px #999;
+
+       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f23030', endColorstr='#b02323'); /* for IE */
+       background: -webkit-gradient(linear, left top, left bottom, from(#f23030), to(#b02323));
+       background: -webkit-linear-gradient(top, #f23030, #b02323);
+       background: -moz-linear-gradient(top, #f23030, #b02323);
+       background: -ms-linear-gradient(top, #f23030, #b02323);
+       background: -o-linear-gradient(top, #f23030, #b02323);
+       color:white;
+       } 
+.infobutton:active {
+       border-top-color: #030303; /*#1aba65; */
+       background: #ba2cb5;
+       background-repeat: repeat-x;
+       background-position: 0 80%;
+       zoom: 1;
+       border-radius: 34px;
+       -moz-border-radius: 34px;
+       -webkit-border-radius: 34px;
+
+       -webkit-box-shadow: 0px 2px 4px #999;
+       -moz-box-shadow: 0px 2px 4px #999;
+       box-shadow: 0px 2px 4px #999;
+
+       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ad1010', endColorstr='#f00e0e'); /* for IE */
+       background: -webkit-gradient(linear, left top, left bottom, from(#ad1010), to(#f00e0e));
+       background: -webkit-linear-gradient(top, #ad1010, #f00e0e);
+       background: -moz-linear-gradient(top, #ad1010, #f00e0e);
+       background: -ms-linear-gradient(top, #ad1010, #f00e0e);
+       background: -o-linear-gradient(top, #ad1010, #f00e0e);
+       }
+       
+.infobuttonbox a {
+       color:white;
+       text-decoration:none;
+       text-align:left;
+       }
+.infobutton a:active, .infobutton a:focus {
+       outline:none;
+       }
+
+/* Footer */
+div#footer {
+        position:relative;
+	font-family:'lucida grande',tahoma,verdana,arial,sans-serif;
+	font-style:normal;
+	color:#000000;
+        clear:both;        /* follows below the other elements, not beside them */
+        margin-top:80px;   /* The content is offset from its normal position in 
+                               the page flow in order to makeroom for the 
+                               absolutely positioned header, and the footer 
+                               needs a correspondingoffset. */
+}
+
+.left {
+        float:left;
+        margin-left:10px;
+        text-align:left;
+        width:25%;
+}
+.center {
+        float:left;
+        margin:0 auto;
+        text-align: center;
+        width:50%;
+}
+.right {
+        float:right;
+        margin-right:10px;
+        text-align:right;
+        width:20%; /* less than 100% ensure all on the same line */
+}
+
+/* Progress Bar */
+div#progress {
+        position:absolute;
+        left:352px;
+        top:-5px;
+        padding-top:10px;
+        padding-bottom:10px;
+        font-size:20px;
+        }
+.progressTable {
+        border: solid 1px #e1e1e1;
+        display:inline;
+        }
+.size, .cell {
+        width: 20px;
+        height: 20px;    
+        }
+.cell  {        
+        background-color: #22dd22;
+        display: none;
+        }
+
+/* Popup window */
+#fade { /*--Transparent background layer--*/
+	display: none; /*--hidden by default--*/
+	background: #000;
+	position: fixed; left: 0; top: 0;
+	width: 100%; height: 100%;
+	opacity: .80;
+	z-index: 9999;
+}
+.popup {
+	display: none; /*--hidden by default--*/
+	background: #fff;
+	padding: 20px;
+	float: left;
+	font-size: 1.2em;
+	position: fixed;
+        width:500px;
+        height:500px;
+        left:50%;
+        top:50%;
+	z-index: 99999;
+
+        /*--CSS3 Box Shadows--*/
+	-webkit-box-shadow: 0px 0px 20px #000;
+	-moz-box-shadow: 0px 0px 20px #000;
+	box-shadow: 0px 0px 20px #000;
+
+        border: 20px solid #ddd; /* width style color */
+	/*--CSS3 Rounded Corners--*/
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+img.btn_close {
+	float: right;
+	margin: -40px -40px 0 0;
+        /* position:fixed;
+        left:1200px; */
+        top:0px;
+        z-index:101;
+}
+
+#printerAnimate {
+        width:700px;
+        height:650px;
+        line-height:18px;
+        background:#333;
+	padding: 20px;
+        margin:0px 15px;
+        color:white;
+        font-size: 1.2em;
+        border: 1px solid #666666;
+        border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-khtml-border-radius: 10px;	
+	-moz-border-radius: 10px; 
+        top:0px;
+        left:0px;
+        visibility:hidden;
+        z-index:100;
+}
+
+/* animated message */
+#message {
+        display:none; /*-- hidden by default */
+        background:#333;
+	padding: 20px;
+        margin:0px 15px;
+        color:white;
+        font-size: 1.2em;
+        position:absolute;
+        top:-80px;
+        left:0px;
+        width:320px;
+        height:130px;
+        opacity:0.1;
+        z-index:9999;
+
+        border: 20px solid #000; /* width style color */
+	/*--CSS3 Rounded Corners--*/
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+}
